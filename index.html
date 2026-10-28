@@ -1,0 +1,1274 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Rayaan's Nexus : Systems Architect & Algorithmic Mentor</title>
+    <meta
+      name="title"
+      content="Rayaan's Nexus | Systems Architect & Algorithmic Mentor"
+    />
+    <meta
+      name="description"
+      content="Explore Rayaan's Nexus, engineered by 13-year-old tech prodigy Rayaan Tasnim. Specializing in low-overhead microservices, C++20, discrete mathematical platforms, and advanced competitive programming blueprints."
+    />
+    <meta
+      name="keywords"
+      content="Rayaan Tasnim, Rayaan's Nexus, Systems Architect, Tech Prodigy Bangladesh, IDAI Universe Kernel, PrimeFactor.app, Codeforces Expert, Competitive Programming Mentor, C++20 Microservices, Discrete Mathematics Platform"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Rayaan Tasnim" />
+    <link rel="canonical" href="https://github.com/rayaantasnim" />
+    <!-- Replace with actual domain if different -->
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/rayaantasnim" />
+    <meta
+      property="og:title"
+      content="Rayaan's Nexus | Systems Architect & Algorithmic Mentor"
+    />
+    <meta
+      property="og:description"
+      content="Operating from Mymensingh, Bangladesh. Crafting ultra-high-performance software architectures, zero-latency microservices, and inspiring the next generation of youth coders."
+    />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/39190813/pexels-photo-39190813.jpeg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Software development and systems architecture dashboard environment"
+    />
+    <meta property="og:site_name" content="Rayaan's Nexus" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://github.com/rayaantasnim" />
+    <meta
+      name="twitter:title"
+      content="Rayaan's Nexus | Systems Architect & Algorithmic Mentor"
+    />
+    <meta
+      name="twitter:description"
+      content="13-year-old tech prodigy Rayaan Tasnim's core ecosystem featuring the IDAI Universe Kernel, discrete math platforms, and high-throughput thread execution templates."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.pexels.com/photos/39190813/pexels-photo-39190813.jpeg"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="design.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="relative selection:bg-teal-accent selection:text-navy-base">
+    <!-- Ambient Grid & Glow Background Elements -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+      <div
+        class="absolute top-0 left-1/4 w-96 h-96 bg-teal-accent/5 rounded-full blur-[120px]"
+      ></div>
+      <div
+        class="absolute bottom-1/3 right-1/4 w-[30rem] h-[30rem] bg-indigo-600/5 rounded-full blur-[150px]"
+      ></div>
+      <div
+        class="absolute top-2/3 left-10 w-80 h-80 bg-blue-500/5 rounded-full blur-[100px]"
+      ></div>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-white/10 px-4 md:px-8 py-4"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Brand Identity -->
+        <a href="#hero" class="group flex flex-col">
+          <span
+            class="text-xl md:text-2xl font-black tracking-wider text-white group-hover:text-teal-accent transition-colors"
+          >
+            RAYAAN's NEXUS
+          </span>
+          <span
+            class="text-xs text-ice-muted font-medium hidden md:inline-block tracking-wide"
+          >
+            Inspiring Young Generation
+          </span>
+        </a>
+
+        <!-- Right-side Hamburger Button -->
+        <button
+          id="menuBtn"
+          aria-label="Toggle Navigation Drawer"
+          class="p-3 rounded-lg glass-panel hover:border-teal-accent text-teal-accent focus:outline-none transition-colors"
+        >
+          <i class="fa-solid fa-bars-staggered text-xl"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- RIGHT SLIDE-OUT GLASS DRAWER OVERLAY (WITH VERTICAL Y-AXIS OVERLAY & SCROLL SYSTEM) -->
+    <div
+      id="navDrawer"
+      class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300"
+    >
+      <!-- Backdrop -->
+      <div
+        id="drawerBackdrop"
+        class="absolute inset-0 bg-navy-base/70 backdrop-blur-sm cursor-pointer"
+      ></div>
+
+      <!-- Drawer Panel -->
+      <aside
+        id="drawerPanel"
+        class="absolute top-0 right-0 h-full w-full max-w-sm bg-[#0A192F]/95 backdrop-blur-2xl border-l border-white/10 p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 ease-out shadow-2xl pointer-events-auto"
+      >
+        <!-- Drawer Header -->
+        <div
+          class="flex justify-between items-center border-b border-white/10 pb-4 mb-2 flex-shrink-0"
+        >
+          <div class="flex items-center space-x-3">
+            <span class="p-2 rounded-lg bg-teal-accent/10 text-teal-accent">
+              <i class="fa-solid fa-compass text-lg"></i>
+            </span>
+            <div>
+              <h3 class="text-lg font-bold text-white tracking-wider">
+                NAVIGATION
+              </h3>
+              <p class="text-xs text-teal-accent font-mono">
+                System Modules Overlay
+              </p>
+            </div>
+          </div>
+          <button
+            id="closeDrawer"
+            class="text-ice-muted hover:text-teal-accent p-2 rounded-lg hover:bg-white/5 text-xl transition-all"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Drawer Vertical Scroll System -->
+        <div class="drawer-scroll-vertical pr-2 my-auto py-2">
+          <nav class="space-y-2 font-mono text-sm">
+            <a
+              href="#hero"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">01.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >Initializer (Hero)</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+
+            <a
+              href="#overview"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">02.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >Cognitive Blueprint</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+
+            <a
+              href="#parametric"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">03.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >Parametric Advantage</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+
+            <a
+              href="#signal"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">04.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >Signal Acquisition</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+
+            <a
+              href="#mailbox"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">05.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >Secure Mailbox</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+
+            <a
+              href="#source"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">06.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >Source Control</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+
+            <a
+              href="#chess"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">07.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >Strategic Endgame</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+
+            <a
+              href="#transmission"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">08.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >Transmission Hub</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+
+            <a
+              href="#shutdown"
+              class="drawer-link group flex items-center justify-between p-3 rounded-xl border border-transparent hover:border-teal-accent/30 hover:bg-white/5 hover:text-teal-accent transition-all text-ice-readable"
+            >
+              <div class="flex items-center">
+                <span class="text-teal-accent mr-3 text-xs font-bold">09.</span>
+                <span class="group-hover:translate-x-1 transition-transform"
+                  >System Shutdown</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 text-teal-accent transition-all"
+              ></i>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Drawer Footer Status -->
+        <div
+          class="pt-4 mt-2 border-t border-white/10 text-xs text-ice-muted font-mono flex justify-between items-center flex-shrink-0"
+        >
+          <div class="flex items-center space-x-2">
+            <span
+              class="inline-block w-2 h-2 rounded-full bg-teal-accent animate-ping"
+            ></span>
+            <span class="text-white font-semibold">STATUS: ONLINE</span>
+          </div>
+          <span class="text-teal-accent">v2.0.4</span>
+        </div>
+      </aside>
+    </div>
+
+    <!-- MAIN PAGE CONTENT (9 CORE SECTIONS) -->
+    <main
+      class="relative z-10 pt-24 space-y-28 pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    >
+      <!-- SECTION 1: CORE INITIALIZER (HERO BANNER) -->
+      <section
+        id="hero"
+        class="min-h-[85vh] flex flex-col justify-center items-start pt-8 scroll-mt-28"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
+          <!-- Left Details -->
+          <div class="lg:col-span-7 space-y-6">
+            <div
+              class="inline-flex items-center px-3 py-1 rounded-full glass-panel text-teal-accent text-xs font-mono tracking-wider"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-teal-accent mr-2 animate-pulse"
+              ></span>
+              SYSTEM INITIALIZED // TECH PRODIGY
+            </div>
+            <h1
+              class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-none"
+            >
+              Rayaan Tasnim
+            </h1>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-ice-muted">
+              Systems Architect & Algorithmic Mentor
+            </h2>
+
+            <!-- Core Mission -->
+            <div
+              class="glass-panel p-6 rounded-2xl border-l-4 border-l-teal-accent text-ice-readable text-base sm:text-lg leading-relaxed"
+            >
+              <p class="font-medium text-white italic text-justify">
+                "I love to inspire the next generation to dive deeper in the
+                tech universe rather than being just a consumer."
+              </p>
+            </div>
+
+            <!-- Narrative Content with Justified Alignment -->
+            <p
+              class="text-ice-muted leading-relaxed text-sm sm:text-base text-justify"
+            >
+              Welcome to Rayaan's Nexus. Operating from Mymensingh, Bangladesh,
+              I specialize in crafting ultra-high-performance software
+              architectures, discrete mathematical platforms, and competitive
+              algorithmic solutions. At 13 years old, my mission extends beyond
+              simple software development; I aim to empower young developers
+              worldwide to master core logic, low-level execution, and scalable
+              system engineering. By breaking down complex computational
+              paradigms into accessible blueprints, I bridge the gap between
+              creative curiosity and high-level software engineering.
+            </p>
+
+            <div class="pt-4 flex flex-wrap gap-4">
+              <a
+                href="#transmission"
+                class="px-6 py-3 rounded-xl bg-teal-accent text-navy-base font-bold hover:bg-opacity-90 transition-all duration-200 teal-glow flex items-center gap-2"
+              >
+                <i class="fa-solid fa-paper-plane"></i> Initiate Transmission
+              </a>
+              <a
+                href="#overview"
+                class="px-6 py-3 rounded-xl glass-panel text-white font-semibold hover:border-teal-accent transition-all duration-200 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-microchip"></i> Explore Blueprint
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Visual: Pexels Image & Live Terminal -->
+          <div class="lg:col-span-5 space-y-6">
+            <div
+              class="relative group rounded-2xl overflow-hidden glass-panel p-2"
+            >
+              <img
+                src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Code Terminal Workspace"
+                class="w-full h-64 sm:h-72 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-navy-base/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="text-teal-accent font-mono text-sm px-4 py-2 rounded-lg glass-panel"
+                  >SYS_OVERRIDE_ENABLED</span
+                >
+              </div>
+            </div>
+
+            <!-- Interactive Element: Live Terminal Console Ticker -->
+            <div
+              class="glass-panel rounded-2xl overflow-hidden border border-white/10 font-mono text-xs shadow-2xl"
+            >
+              <div
+                class="bg-navy-secondary px-4 py-3 border-b border-white/10 flex justify-between items-center"
+              >
+                <div class="flex items-center space-x-2">
+                  <span
+                    class="w-3 h-3 rounded-full bg-red-500/80 inline-block"
+                  ></span>
+                  <span
+                    class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"
+                  ></span>
+                  <span
+                    class="w-3 h-3 rounded-full bg-green-500/80 inline-block"
+                  ></span>
+                  <span class="ml-2 text-ice-muted text-[11px]"
+                    >nexus-status.sh</span
+                  >
+                </div>
+                <div class="flex items-center space-x-2">
+                  <span
+                    class="w-2 h-2 rounded-full bg-teal-accent animate-ping"
+                  ></span>
+                  <span class="text-teal-accent text-[11px]">LIVE</span>
+                </div>
+              </div>
+              <div class="p-4 space-y-2 text-ice-readable">
+                <div class="flex justify-between border-b border-white/5 pb-1">
+                  <span class="text-ice-muted">SYSTEM_UPTIME:</span>
+                  <span class="text-teal-accent font-bold" id="uptimeCounter"
+                    >99.998%</span
+                  >
+                </div>
+                <div class="flex justify-between border-b border-white/5 pb-1">
+                  <span class="text-ice-muted">ACTIVE_NODES:</span>
+                  <span class="text-white" id="activeNodes"
+                    >1,024 Clusters</span
+                  >
+                </div>
+                <div class="flex justify-between border-b border-white/5 pb-1">
+                  <span class="text-ice-muted">CURRENT_STACK:</span>
+                  <span class="text-amber-300">C++20 / Microservices / JS</span>
+                </div>
+                <div class="flex justify-between border-b border-white/5 pb-1">
+                  <span class="text-ice-muted">MEMORY_LOAD:</span>
+                  <span class="text-emerald-400" id="memLoad">34.2%</span>
+                </div>
+                <div class="pt-2 text-teal-accent flex items-center gap-2">
+                  <span>$</span>
+                  <span id="terminalLiveText">executing system check...</span>
+                  <span
+                    class="w-2 h-4 bg-teal-accent animate-pulse inline-block"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: COGNITIVE BLUEPRINT (PROFILE OVERVIEW) -->
+      <section id="overview" class="space-y-8 scroll-mt-28">
+        <div class="border-b border-white/10 pb-4">
+          <div class="flex items-center space-x-3">
+            <span class="text-teal-accent font-mono text-lg">02.</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight">
+              Cognitive Blueprint
+            </h2>
+          </div>
+          <p class="text-ice-muted text-sm mt-1">
+            Operational Profile & Technical Core
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <!-- Text Content & Image -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="rounded-2xl overflow-hidden glass-panel p-2">
+              <img
+                src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Software Architecture Layout"
+                class="w-full h-56 object-cover rounded-xl"
+                loading="lazy"
+              />
+            </div>
+            <div class="glass-panel p-6 rounded-2xl space-y-4">
+              <h3 class="text-xl font-bold text-white">
+                Rayaan Tasnim // Technical Profile
+              </h3>
+              <p class="text-ice-readable text-sm leading-relaxed text-justify">
+                Rayaan Tasnim is a 13-year-old software architect, competitive
+                programmer, and algorithmic mentor based in Mymensingh,
+                Bangladesh. Demonstrating exceptional mastery in discrete
+                mathematics and zero-latency backend microservices, Rayaan has
+                established himself as a forward-thinking technical mind.
+              </p>
+              <p class="text-ice-muted text-sm leading-relaxed text-justify">
+                He is the primary creator behind the
+                <strong class="text-teal-accent">IDAI Universe Kernel</strong>
+                and <strong class="text-teal-accent">PrimeFactor.app</strong>—a
+                cutting-edge digital ecosystem connecting advanced
+                combinatorics, graph theory, and real-time distributed
+                microservices. As a Codeforces Expert, Rayaan designs highly
+                responsive client-side architectures and guides upcoming youth
+                coders into mastering core computer science principles over
+                superficial API consumption.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive Element: Asymmetric Bento Grid for Skills -->
+          <div
+            class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4"
+            id="bentoGrid"
+          >
+            <div
+              class="bento-card glass-panel glass-panel-hover p-6 rounded-2xl space-y-3 border-l-2 border-l-teal-accent sm:col-span-2"
+            >
+              <div class="flex justify-between items-start">
+                <i
+                  class="fa-solid fa-network-wired text-2xl text-teal-accent"
+                ></i>
+                <span class="text-xs font-mono text-ice-muted"
+                  >KERNEL_LAYER</span
+                >
+              </div>
+              <h4 class="text-lg font-bold text-white">IDAI Universe Kernel</h4>
+              <p class="text-xs text-ice-muted leading-relaxed text-justify">
+                Ultra-lightweight core framework engineered for low-overhead
+                microservice routing and high-throughput thread execution.
+              </p>
+            </div>
+
+            <div
+              class="bento-card glass-panel glass-panel-hover p-5 rounded-2xl space-y-2"
+            >
+              <i class="fa-solid fa-calculator text-2xl text-amber-400"></i>
+              <h4 class="text-base font-bold text-white">PrimeFactor.app</h4>
+              <p class="text-xs text-ice-muted text-justify">
+                Discrete math platform uniting competitive combinatorics and
+                microservices.
+              </p>
+            </div>
+
+            <div
+              class="bento-card glass-panel glass-panel-hover p-5 rounded-2xl space-y-2"
+            >
+              <i class="fa-solid fa-code-compare text-2xl text-blue-400"></i>
+              <h4 class="text-base font-bold text-white">Codeforces Expert</h4>
+              <p class="text-xs text-ice-muted text-justify">
+                Advanced graph algorithms, dynamic programming, and mathematical
+                proofs.
+              </p>
+            </div>
+
+            <div
+              class="bento-card glass-panel glass-panel-hover p-5 rounded-2xl space-y-2 sm:col-span-2"
+            >
+              <div class="flex justify-between items-center">
+                <h4 class="text-base font-bold text-white">
+                  Core Technology Stack
+                </h4>
+                <span class="text-xs font-mono text-teal-accent"
+                  >OPTIMIZED</span
+                >
+              </div>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="px-3 py-1 rounded-md text-xs font-mono bg-navy-light text-teal-accent"
+                  >C++20</span
+                >
+                <span
+                  class="px-3 py-1 rounded-md text-xs font-mono bg-navy-light text-teal-accent"
+                  >JavaScript (ESNext)</span
+                >
+                <span
+                  class="px-3 py-1 rounded-md text-xs font-mono bg-navy-light text-teal-accent"
+                  >Python 3.11</span
+                >
+                <span
+                  class="px-3 py-1 rounded-md text-xs font-mono bg-navy-light text-teal-accent"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="px-3 py-1 rounded-md text-xs font-mono bg-navy-light text-teal-accent"
+                  >GSAP Engine</span
+                >
+                <span
+                  class="px-3 py-1 rounded-md text-xs font-mono bg-navy-light text-teal-accent"
+                  >Distributed Systems</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: THE PARAMETRIC ADVANTAGE (WHY CHOOSE) -->
+      <section id="parametric" class="space-y-8 scroll-mt-28">
+        <div class="border-b border-white/10 pb-4">
+          <div class="flex items-center space-x-3">
+            <span class="text-teal-accent font-mono text-lg">03.</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight">
+              The Parametric Advantage
+            </h2>
+          </div>
+          <p class="text-ice-muted text-sm mt-1">
+            Quantitative Metrics & Architectural Precision
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <div class="rounded-2xl overflow-hidden glass-panel p-2">
+              <img
+                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Analytical Metrics and Analytics"
+                class="w-full h-60 object-cover rounded-xl"
+                loading="lazy"
+              />
+            </div>
+            <p
+              class="text-ice-readable text-sm leading-relaxed glass-panel p-5 rounded-2xl text-justify"
+            >
+              Building modern digital experiences requires strict adherence to
+              mathematical optimization, low latency, and modular codebase
+              sustainability. Every layer of the IDAI Universe and client
+              projects undergo rigorous static analysis and benchmarking to
+              ensure zero resource waste, instant initial renders, and absolute
+              responsiveness across mobile and desktop interfaces.
+            </p>
+          </div>
+
+          <!-- Interactive Element: Animated Progress Bars via GSAP ScrollTrigger -->
+          <div
+            class="lg:col-span-6 glass-panel p-6 sm:p-8 rounded-2xl space-y-6"
+            id="progressBarsContainer"
+          >
+            <h3 class="text-xl font-bold text-white mb-4">
+              System Performance Metrics
+            </h3>
+
+            <!-- Metric 1 -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm font-mono">
+                <span class="text-white">Execution Efficiency & Speed</span>
+                <span class="text-teal-accent font-bold">99%</span>
+              </div>
+              <div
+                class="w-full h-3 bg-navy-secondary rounded-full overflow-hidden p-0.5 border border-white/10"
+              >
+                <div
+                  class="progress-bar-fill h-full bg-gradient-to-r from-teal-500 to-teal-accent rounded-full w-0"
+                  data-target="99%"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Metric 2 -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm font-mono">
+                <span class="text-white">Core Web Vitals Performance</span>
+                <span class="text-teal-accent font-bold">100%</span>
+              </div>
+              <div
+                class="w-full h-3 bg-navy-secondary rounded-full overflow-hidden p-0.5 border border-white/10"
+              >
+                <div
+                  class="progress-bar-fill h-full bg-gradient-to-r from-teal-500 to-teal-accent rounded-full w-0"
+                  data-target="100%"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Metric 3 -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm font-mono">
+                <span class="text-white">Clean Architecture & Modularity</span>
+                <span class="text-teal-accent font-bold">98%</span>
+              </div>
+              <div
+                class="w-full h-3 bg-navy-secondary rounded-full overflow-hidden p-0.5 border border-white/10"
+              >
+                <div
+                  class="progress-bar-fill h-full bg-gradient-to-r from-teal-500 to-teal-accent rounded-full w-0"
+                  data-target="98%"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Metric 4 -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm font-mono">
+                <span class="text-white">Algorithmic Optimization</span>
+                <span class="text-teal-accent font-bold">96%</span>
+              </div>
+              <div
+                class="w-full h-3 bg-navy-secondary rounded-full overflow-hidden p-0.5 border border-white/10"
+              >
+                <div
+                  class="progress-bar-fill h-full bg-gradient-to-r from-teal-500 to-teal-accent rounded-full w-0"
+                  data-target="96%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: SIGNAL ACQUISITION (GET TUNED) -->
+      <section id="signal" class="space-y-8 scroll-mt-28">
+        <div class="border-b border-white/10 pb-4">
+          <div class="flex items-center space-x-3">
+            <span class="text-teal-accent font-mono text-lg">04.</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight">
+              Signal Acquisition
+            </h2>
+          </div>
+          <p class="text-ice-muted text-sm mt-1">
+            Engineering Collaboration Tiers & Strategic Deployment
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-4 space-y-4">
+            <div class="rounded-2xl overflow-hidden glass-panel p-2">
+              <img
+                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Collaboration and Team Engineering"
+                class="w-full h-52 object-cover rounded-xl"
+                loading="lazy"
+              />
+            </div>
+            <p
+              class="text-ice-readable text-sm leading-relaxed glass-panel p-5 rounded-2xl text-justify"
+            >
+              Whether consulting on competitive algorithm strategies, auditing
+              existing microservice pipelines, or co-architecting web platforms,
+              clear deployment milestones and delivery expectations ensure
+              optimal client alignment and rapid zero-bug rollouts.
+            </p>
+          </div>
+
+          <!-- Interactive Element: Structural Collaboration Table -->
+          <div
+            class="lg:col-span-8 overflow-x-auto glass-panel rounded-2xl border border-white/10 p-2"
+          >
+            <table
+              class="w-full text-left text-sm text-ice-readable border-collapse"
+            >
+              <thead>
+                <tr
+                  class="bg-navy-secondary/80 text-teal-accent font-mono border-b border-white/10"
+                >
+                  <th class="p-4">COLLABORATION TIER</th>
+                  <th class="p-4">FOCUS AREA</th>
+                  <th class="p-4">CYCLE TIME</th>
+                  <th class="p-4">DELIVERABLE</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5 font-sans">
+                <tr class="hover:bg-white/5 transition-colors">
+                  <td class="p-4 font-bold text-white">
+                    Tier I: Algorithmic Audit
+                  </td>
+                  <td class="p-4 text-ice-muted">
+                    Codeforces/C++ Logic, Data Structures
+                  </td>
+                  <td class="p-4 font-mono text-xs text-amber-300">48 Hours</td>
+                  <td class="p-4 text-xs">
+                    Optimization & Time Complexity Report
+                  </td>
+                </tr>
+                <tr class="hover:bg-white/5 transition-colors">
+                  <td class="p-4 font-bold text-white">
+                    Tier II: Microservice Setup
+                  </td>
+                  <td class="p-4 text-ice-muted">
+                    Distributed Nodes, Routing Kernels
+                  </td>
+                  <td class="p-4 font-mono text-xs text-amber-300">
+                    1 - 2 Weeks
+                  </td>
+                  <td class="p-4 text-xs">Deployable Containerized Service</td>
+                </tr>
+                <tr class="hover:bg-white/5 transition-colors">
+                  <td class="p-4 font-bold text-white">
+                    Tier III: Full Stack Architecture
+                  </td>
+                  <td class="p-4 text-ice-muted">
+                    Glassmorphism UI, Responsive Web Apps
+                  </td>
+                  <td class="p-4 font-mono text-xs text-amber-300">
+                    2 - 4 Weeks
+                  </td>
+                  <td class="p-4 text-xs">
+                    Production SPA + CI/CD Integration
+                  </td>
+                </tr>
+                <tr class="hover:bg-white/5 transition-colors">
+                  <td class="p-4 font-bold text-white">
+                    Tier IV: Youth Mentorship
+                  </td>
+                  <td class="p-4 text-ice-muted">
+                    Discrete Math & Code Fundamentals
+                  </td>
+                  <td class="p-4 font-mono text-xs text-amber-300">
+                    Continuous
+                  </td>
+                  <td class="p-4 text-xs">1-on-1 Guidance & Problem Sets</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: SECURE MAILBOX -->
+      <section id="mailbox" class="space-y-8 scroll-mt-28">
+        <div class="border-b border-white/10 pb-4">
+          <div class="flex items-center space-x-3">
+            <span class="text-teal-accent font-mono text-lg">05.</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight">
+              Secure Mailbox
+            </h2>
+          </div>
+          <p class="text-ice-muted text-sm mt-1">
+            Direct Encrypted Communication Relay
+          </p>
+        </div>
+
+        <div
+          class="glass-panel p-8 sm:p-12 rounded-3xl text-center max-w-3xl mx-auto space-y-6 relative overflow-hidden"
+        >
+          <div
+            class="absolute -right-10 -bottom-10 w-40 h-40 bg-teal-accent/10 rounded-full blur-2xl"
+          ></div>
+          <div
+            class="inline-p-4 rounded-full bg-navy-secondary text-teal-accent text-3xl mb-2 inline-block"
+          >
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+            Direct Channel Open
+          </h3>
+
+          <p
+            class="text-ice-readable text-sm sm:text-base max-w-xl mx-auto leading-relaxed text-justify"
+          >
+            Have a question, proposal, or want to collaborate on high-level
+            algorithmic projects? Send a direct dispatch to my inbox. I aim to
+            respond within 24 hours.
+          </p>
+
+          <!-- Interactive Element: Catch Me Glow Button redirecting to email -->
+          <div class="pt-4">
+            <a
+              href="mailto:rayaantasnim@gmail.com"
+              class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-teal-accent text-navy-base font-extrabold text-lg hover:scale-105 transition-all duration-300 teal-glow teal-glow-hover"
+            >
+              <i class="fa-solid fa-paper-plane"></i> Catch Me @ Gmail
+            </a>
+          </div>
+          <p class="text-xs font-mono text-ice-muted pt-2">
+            TARGET: rayaantasnim@gmail.com
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 6: SOURCE CONTROL (GITHUB) -->
+      <section id="source" class="space-y-8 scroll-mt-28">
+        <div class="border-b border-white/10 pb-4">
+          <div class="flex items-center space-x-3">
+            <span class="text-teal-accent font-mono text-lg">06.</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight">
+              Source Control
+            </h2>
+          </div>
+          <p class="text-ice-muted text-sm mt-1">
+            GitHub Versioning & Public Repositories
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <div class="rounded-2xl overflow-hidden glass-panel p-2">
+              <img
+                src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="GitHub Repository Source Code"
+                class="w-full h-56 object-cover rounded-xl"
+                loading="lazy"
+              />
+            </div>
+            <p
+              class="text-ice-readable text-sm leading-relaxed glass-panel p-5 rounded-2xl text-justify"
+            >
+              Open-source transparency is central to the IDAI Universe
+              philosophy. All core libraries, competitive programming templates,
+              discrete math scripts, and web utilities are archived publicly on
+              GitHub for community audit and collaboration.
+            </p>
+          </div>
+
+          <!-- Interactive Element: Micro-Terminal Trigger Button -->
+          <div
+            class="lg:col-span-6 glass-panel p-6 sm:p-8 rounded-2xl space-y-6"
+          >
+            <div
+              class="flex justify-between items-center border-b border-white/10 pb-4"
+            >
+              <span class="font-mono text-xs text-teal-accent"
+                >TERMINAL_TRIGGER_SHELL</span
+              >
+              <i class="fa-brands fa-github text-2xl text-white"></i>
+            </div>
+
+            <div
+              class="bg-navy-base p-4 rounded-xl font-mono text-sm space-y-2 text-emerald-400 border border-white/10"
+            >
+              <p class="text-ice-muted">$ git status</p>
+              <p>
+                On branch main. Your branch is up to date with 'origin/main'.
+              </p>
+              <p class="text-ice-muted">$ git checkout rayyan-nexus</p>
+              <p class="text-teal-accent">Switched to branch 'rayyan-nexus'</p>
+            </div>
+
+            <a
+              href="https://github.com/rayaantasnim"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full py-4 glass-panel glass-panel-hover rounded-xl flex items-center justify-center gap-3 text-white font-mono font-bold hover:text-teal-accent border border-teal-accent/30 transition-all"
+            >
+              <i class="fa-brands fa-github text-xl"></i>
+              <span>Dive into GitHub</span>
+              <i
+                class="fa-solid fa-arrow-up-right-from-square text-xs text-teal-accent"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: STRATEGIC ENDGAME (CHESS.COM) -->
+      <section id="chess" class="space-y-8 scroll-mt-28">
+        <div class="border-b border-white/10 pb-4">
+          <div class="flex items-center space-x-3">
+            <span class="text-teal-accent font-mono text-lg">07.</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight">
+              Strategic Endgame
+            </h2>
+          </div>
+          <p class="text-ice-muted text-sm mt-1">
+            Positional Calculation & Tactical Logic
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="rounded-2xl overflow-hidden glass-panel p-2">
+              <img
+                src="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Chess Strategy and Calculation"
+                class="w-full h-56 object-cover rounded-xl"
+                loading="lazy"
+              />
+            </div>
+            <p
+              class="text-ice-readable text-sm leading-relaxed glass-panel p-5 rounded-2xl text-justify"
+            >
+              Positional chess calculation mirrors complex microservice
+              architecture logic. Analyzing candidate moves, calculating tree
+              depths, and controlling key squares parallel system thread
+              allocation and competitive algorithm optimization.
+            </p>
+          </div>
+
+          <!-- Interactive Element: Custom Tactical Match Layout Grid -->
+          <div
+            class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-2xl space-y-6"
+          >
+            <div
+              class="flex justify-between items-center border-b border-white/10 pb-4"
+            >
+              <div>
+                <h3 class="text-lg font-bold text-white">
+                  Chess.com Strategic Dashboard
+                </h3>
+                <p class="text-xs text-teal-accent font-mono">
+                  HANDLE: @rayaantasnim
+                </p>
+              </div>
+              <i class="fa-solid fa-chess-king text-3xl text-amber-400"></i>
+            </div>
+
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 gap-4 font-mono text-center"
+            >
+              <div
+                class="p-4 rounded-xl bg-navy-secondary border border-white/5 space-y-1"
+              >
+                <span class="text-xs text-ice-muted block"
+                  >TACTICAL PUZZLES</span
+                >
+                <span class="text-xl font-bold text-teal-accent">2,200+</span>
+              </div>
+              <div
+                class="p-4 rounded-xl bg-navy-secondary border border-white/5 space-y-1"
+              >
+                <span class="text-xs text-ice-muted block"
+                  >STRATEGIC STYLE</span
+                >
+                <span class="text-lg font-bold text-amber-300">Positional</span>
+              </div>
+              <div
+                class="p-4 rounded-xl bg-navy-secondary border border-white/5 space-y-1 col-span-2 sm:col-span-1"
+              >
+                <span class="text-xs text-ice-muted block"
+                  >PREFERRED OPENING</span
+                >
+                <span class="text-sm font-bold text-white"
+                  >Sicilian / Ruy Lopez</span
+                >
+              </div>
+            </div>
+
+            <a
+              href="https://www.chess.com/member/rayaantasnim"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full py-4 glass-panel glass-panel-hover rounded-xl flex items-center justify-center gap-3 text-white font-bold hover:text-teal-accent transition-all"
+            >
+              <i class="fa-solid fa-chess-board text-xl text-teal-accent"></i>
+              <span>Challenge Me on Chess.com</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: TRANSMISSION HUB (CONTACT CHATBOX) -->
+      <section id="transmission" class="space-y-8 scroll-mt-28">
+        <div class="border-b border-white/10 pb-4">
+          <div class="flex items-center space-x-3">
+            <span class="text-teal-accent font-mono text-lg">08.</span>
+            <h2 class="text-3xl font-bold text-white tracking-tight">
+              Transmission Hub
+            </h2>
+          </div>
+          <p class="text-ice-muted text-sm mt-1">Direct API Message Dispatch</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="rounded-2xl overflow-hidden glass-panel p-2">
+              <img
+                src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Communication Transmission Contact"
+                class="w-full h-56 object-cover rounded-xl"
+                loading="lazy"
+              />
+            </div>
+            <div class="glass-panel p-6 rounded-2xl space-y-3">
+              <h3 class="text-lg font-bold text-white">
+                Encrypted Transmission Protocol
+              </h3>
+              <p class="text-ice-readable text-sm leading-relaxed text-justify">
+                Fill out the required parameters to send a direct notification
+                to my secondary inbox via Formbold backend services. All
+                messages are parsed in real time.
+              </p>
+            </div>
+          </div>
+
+          <!-- Glassmorphism Form Container -->
+          <div
+            class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-2xl relative"
+          >
+            <form id="contactForm" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <!-- Field 1: Name -->
+                <div class="space-y-2">
+                  <label
+                    for="formName"
+                    class="block text-xs font-mono text-teal-accent"
+                    >01. YOUR NAME *</label
+                  >
+                  <input
+                    type="text"
+                    id="formName"
+                    name="name"
+                    required
+                    placeholder="e.g. Alan Turing"
+                    class="w-full px-4 py-3 rounded-xl bg-navy-secondary/80 border border-white/10 text-white placeholder-ice-muted focus:outline-none focus:border-teal-accent transition-colors text-sm"
+                  />
+                </div>
+
+                <!-- Field 2: Email -->
+                <div class="space-y-2">
+                  <label
+                    for="formEmail"
+                    class="block text-xs font-mono text-teal-accent"
+                    >02. YOUR GMAIL *</label
+                  >
+                  <input
+                    type="email"
+                    id="formEmail"
+                    name="email"
+                    required
+                    placeholder="e.g. alan@gmail.com"
+                    class="w-full px-4 py-3 rounded-xl bg-navy-secondary/80 border border-white/10 text-white placeholder-ice-muted focus:outline-none focus:border-teal-accent transition-colors text-sm"
+                  />
+                </div>
+              </div>
+
+              <!-- Field 3: Subject -->
+              <div class="space-y-2">
+                <label
+                  for="formSubject"
+                  class="block text-xs font-mono text-teal-accent"
+                  >03. TRANSMISSION SUBJECT *</label
+                >
+                <input
+                  type="text"
+                  id="formSubject"
+                  name="subject"
+                  required
+                  placeholder="e.g. Microservice Collaboration"
+                  class="w-full px-4 py-3 rounded-xl bg-navy-secondary/80 border border-white/10 text-white placeholder-ice-muted focus:outline-none focus:border-teal-accent transition-colors text-sm"
+                />
+              </div>
+
+              <!-- Field 4: Message -->
+              <div class="space-y-2">
+                <label
+                  for="formMessage"
+                  class="block text-xs font-mono text-teal-accent"
+                  >04. PAYLOAD MESSAGE *</label
+                >
+                <textarea
+                  id="formMessage"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Describe your objective or inquiry..."
+                  class="w-full px-4 py-3 rounded-xl bg-navy-secondary/80 border border-white/10 text-white placeholder-ice-muted focus:outline-none focus:border-teal-accent transition-colors text-sm resize-none"
+                ></textarea>
+              </div>
+
+              <!-- Form Submit Button -->
+              <button
+                type="submit"
+                id="submitBtn"
+                class="w-full py-4 rounded-xl bg-teal-accent text-navy-base font-bold text-base hover:bg-opacity-90 transition-all duration-200 teal-glow flex items-center justify-center gap-2"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Transmit Message</span>
+              </button>
+            </form>
+
+            <!-- Form Callback Message Overlay -->
+            <div
+              id="formStatus"
+              class="hidden mt-4 p-4 rounded-xl text-center text-sm font-mono"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9: SYSTEM SHUTDOWN (CONCLUSION) -->
+      <section id="shutdown" class="space-y-8 scroll-mt-28">
+        <div
+          class="glass-panel p-8 sm:p-12 rounded-3xl text-center space-y-6 relative overflow-hidden"
+        >
+          <div
+            class="inline-block p-4 rounded-full bg-navy-secondary text-teal-accent text-3xl mb-2"
+          >
+            <i class="fa-solid fa-power-off"></i>
+          </div>
+          <h2 class="text-3xl font-extrabold text-white">
+            System Shutdown & Reset
+          </h2>
+          <p
+            class="text-ice-readable text-sm sm:text-base max-w-2xl mx-auto leading-relaxed text-justify"
+          >
+            Thank you for navigating through Rayaan's Nexus. Whether you are
+            seeking technical guidance in discrete algorithms or establishing
+            next-gen web systems, the nexus remains operational.
+          </p>
+
+          <!-- Interactive Element: Geometric Back-To-Top Button -->
+          <div class="pt-4">
+            <button
+              id="backToTopBtn"
+              type="button"
+              class="px-8 py-4 rounded-xl glass-panel glass-panel-hover text-teal-accent font-mono font-bold border border-teal-accent/40 inline-flex items-center gap-3 transition-all cursor-pointer"
+            >
+              <i class="fa-solid fa-arrow-up"></i>
+              <span>REBOOT</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER CONFIGURATION -->
+    <footer
+      class="relative z-10 border-t border-white/10 bg-navy-base/80 backdrop-blur-md py-10 mt-20"
+    >
+      <div class="max-w-7xl mx-auto px-4 text-center space-y-6">
+        <!-- 3 Functional Vector / Icon Placeholders -->
+        <div class="flex justify-center items-center space-x-6">
+          <a
+            href="mailto:rayaantasnim@gmail.com"
+            class="w-12 h-12 rounded-full glass-panel glass-panel-hover flex items-center justify-center text-teal-accent text-xl transition-all"
+            aria-label="Mailbox"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a
+            href="https://github.com/rayaantasnim"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-12 h-12 rounded-full glass-panel glass-panel-hover flex items-center justify-center text-teal-accent text-xl transition-all"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.chess.com/member/rayaantasnim"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-12 h-12 rounded-full glass-panel glass-panel-hover flex items-center justify-center text-teal-accent text-xl transition-all"
+            aria-label="Chess.com"
+          >
+            <i class="fa-solid fa-chess"></i>
+          </a>
+        </div>
+
+        <!-- Vertical Typographic Sequence -->
+        <div class="space-y-1 font-mono text-xs text-ice-muted">
+          <p class="text-white font-medium">
+            Authorized by Rayaan Tasnim with precision
+          </p>
+          <p>© All rights Reserved</p>
+          <p class="text-teal-accent pt-1">Powered by Olympiad Edge</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT & GSAP INTERACTIVE LOGIC -->
+    <script src="gsap.js"></script>
+  </body>
+</html>

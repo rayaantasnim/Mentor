@@ -1,0 +1,64 @@
+/* Custom Utilities & Glassmorphism Core */
+body {
+  background-color: #0a192f;
+  color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(100, 255, 218, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -10px rgba(100, 255, 218, 0.15);
+}
+.teal-glow {
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.25);
+}
+.teal-glow-hover:hover {
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.45);
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+  background: #172a45;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+}
+/* Vertical Scroll System for Drawer Overlay */
+.drawer-scroll-vertical {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 180px);
+  scroll-behavior: smooth;
+}
+.drawer-scroll-vertical::-webkit-scrollbar {
+  width: 5px;
+}
+.drawer-scroll-vertical::-webkit-scrollbar-track {
+  background: rgba(23, 42, 69, 0.5);
+  border-radius: 9999px;
+}
+.drawer-scroll-vertical::-webkit-scrollbar-thumb {
+  background: rgba(100, 255, 218, 0.3);
+  border-radius: 9999px;
+}
+.drawer-scroll-vertical::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 255, 218, 0.8);
+}
